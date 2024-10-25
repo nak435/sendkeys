@@ -125,6 +125,10 @@ struct KeyCodes {
     static let keypad8: UInt16 = 0x5B
     static let keypad9: UInt16 = 0x5C
 
+    // JP-Keyboard
+    static let eisuu: UInt16 = 0x66 //英数
+    static let kana: UInt16 = 0x68 //かな
+
     struct KeyWithFlags {
         let keyCode: UInt16
         let flags: [CGEventFlags]
@@ -256,6 +260,10 @@ struct KeyCodes {
         "keypad7": KeyWithFlags(keypad7),
         "keypad8": KeyWithFlags(keypad8),
         "keypad9": KeyWithFlags(keypad9),
+
+        // JP-Keyboard
+        "eisuu": KeyWithFlags(eisuu), //英数
+        "kana": KeyWithFlags(kana), //かな
 
         // shift modifiers
         "A": KeyWithFlags(a, [.maskShift]),
